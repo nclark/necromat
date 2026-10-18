@@ -2,6 +2,12 @@
   <img src="doc/logo.png" width="420" alt="NECROTIC MATHEMATICS">
 </p>
 
+Try it without installing anything:
+
+```sh
+docker run --rm -it ghcr.io/nclark/nm
+```
+
 ## What Is It
 
 `nm` is like this cool calculator thing. I think it's written in rust but honestly you'd have to check. _nm_ stands for **NUMERICAL MALICE** or **NECROTIC MATHEMATICS** or **NAPALM MULTIPLIER**, probably. It is loosely inspired by [Numi](https://numi.app/) which is definitely better, but Numi doesn't run on linux and doesn't run in the terminal. If you're on a mac you should probably just buy Numi tbh.
@@ -30,6 +36,15 @@ cargo install necromat
 ```
 
 The crate is `necromat`; the command it installs is `nm`.
+
+Or skip installing and run the container. Add `--user` and a mount to keep
+your session between runs; it lands in the same place the native binary
+uses:
+
+```sh
+docker run --rm -it ghcr.io/nclark/nm
+docker run --rm -it --user "$(id -u):$(id -g)" -v ~/.local/share/nm:/data/nm ghcr.io/nclark/nm
+```
 
 Heads up: binutils also ships a program called `nm`, the symbol lister. If you
 have a C toolchain installed, whichever `nm` comes first on your `PATH` wins.
