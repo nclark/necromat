@@ -1,0 +1,11 @@
+hourly_rate=50
+hours_worked=40
+gross_pay=hourly_rate*hours_worked
+
+# Deductions
+retirement=gross_pay*0.06
+200 # health
+50  # dental
+total_deductions=sum
+
+net_pay=gross_pay-retirement-total_deductions

@@ -1,0 +1,3 @@
+x=100        # Assigns 100 to x
+y=x*2        # y becomes 200
+z=x+y        # z becomes 300

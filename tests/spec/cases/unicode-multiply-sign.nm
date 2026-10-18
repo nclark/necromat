@@ -1,0 +1,3 @@
+# The Unicode multiply sign is not an operator; the error names it whole
+starting_balance=5000
+taxes=starting_balance×0.28

@@ -1,0 +1,8 @@
+rent=1200
+utilities=150
+groceries=400
+entertainment=100
+total_expenses=sum        # Should be 1850
+
+income=3000
+remaining=income-total_expenses    # Should be 1150

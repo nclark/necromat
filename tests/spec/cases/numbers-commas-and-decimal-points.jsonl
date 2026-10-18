@@ -1,0 +1,9 @@
+{"line":1,"value":1000.5,"text":"1,000.5","error":null}
+{"line":2,"value":null,"text":"syntax","error":"invalid number format: 1,000.5.5 (commas must be proper thousand separators)"}
+{"line":3,"value":null,"text":"syntax","error":"invalid number format: 1.2.3 (commas must be proper thousand separators)"}
+{"line":4,"value":null,"text":"syntax","error":"invalid number format: .5 (commas must be proper thousand separators)"}
+{"line":5,"value":null,"text":"syntax","error":"invalid number format: 5. (commas must be proper thousand separators)"}
+{"line":6,"value":null,"text":"syntax","error":"invalid number format: .5 (commas must be proper thousand separators)"}
+{"line":7,"value":null,"text":"syntax","error":"invalid number format: -.5 (commas must be proper thousand separators)"}
+{"line":8,"value":null,"text":"syntax","error":"invalid number format: 1..2 (commas must be proper thousand separators)"}
+{"line":9,"value":null,"text":"syntax","error":"invalid number format: 1,000..5 (commas must be proper thousand separators)"}

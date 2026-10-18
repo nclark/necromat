@@ -1,0 +1,4 @@
+gross=5000
+tax_rate=0.28
+taxes=gross*tax_rate      # Should be 1400
+net=gross-taxes           # Should be 3600

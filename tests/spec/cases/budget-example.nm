@@ -1,0 +1,21 @@
+# Budget example
+100
+-10
+sum
+
+starting_balance=5000
+taxes=starting_balance*0.28
+
+90 # Internet
+25 # Mint Mobile
+85 # Dog food
+bills=sum
+
+balance=starting_balance-taxes-bills
+
+# Errors
+100/0
+rent*2
+groceries*2
+(1+2
+1.5*3

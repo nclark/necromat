@@ -1,0 +1,7 @@
+x=100
+y=x*2
+z=undefined*5
+a=y+50
+b=100/0
+c=a-50
+sum

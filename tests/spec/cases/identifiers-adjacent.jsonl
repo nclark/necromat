@@ -1,0 +1,14 @@
+{"line":1,"value":2.0,"text":"2","error":null}
+{"line":2,"value":null,"text":"error","error":"invalid expression"}
+{"line":3,"value":null,"text":"undef: x2","error":"undefined variable: x2"}
+{"line":4,"value":null,"text":"undef: abc","error":"undefined variable: abc"}
+{"line":5,"value":null,"text":"undef: e5","error":"undefined variable: e5"}
+{"line":6,"value":null,"text":"undef: x10","error":"undefined variable: x10"}
+{"line":7,"value":null,"text":"error","error":"invalid expression"}
+{"line":8,"value":null,"text":"error","error":"invalid expression"}
+{"line":9,"value":1.0,"text":"1","error":null}
+{"line":10,"value":2.0,"text":"2","error":null}
+{"line":11,"value":3.0,"text":"3","error":null}
+{"line":12,"value":4.0,"text":"4","error":null}
+{"line":13,"value":10.0,"text":"10","error":null}
+{"line":14,"value":4.0,"text":"4","error":null}

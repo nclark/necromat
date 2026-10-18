@@ -1,0 +1,2 @@
+{"line":1,"value":1.0,"text":"1","error":null}
+{"line":2,"value":null,"text":"undef: x","error":"undefined variable: x"}

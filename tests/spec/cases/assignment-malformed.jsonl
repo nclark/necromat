@@ -1,0 +1,8 @@
+{"line":1,"value":null,"text":"syntax","error":"unexpected character: ="}
+{"line":2,"value":null,"text":"syntax","error":"unexpected character: ="}
+{"line":3,"value":null,"text":"error","error":"empty expression"}
+{"line":4,"value":null,"text":"error","error":"empty expression"}
+{"line":5,"value":null,"text":"parens","error":"mismatched parentheses"}
+{"line":6,"value":null,"text":"div/0","error":"division by zero"}
+{"line":7,"value":null,"text":"undef: y","error":"undefined variable: y"}
+{"line":8,"value":0.0,"text":"0","error":null}

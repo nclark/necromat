@@ -1,0 +1,4 @@
+{"line":1,"value":10.0,"text":"10","error":null}
+{"line":2,"value":10.0,"text":"10","error":null}
+{"line":3,"value":0.0,"text":"0","error":null}
+{"line":4,"value":null,"text":"div/0","error":"division by zero"}

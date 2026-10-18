@@ -1,0 +1,5 @@
+{"line":1,"value":10.0,"text":"10","error":null}
+{"line":2,"value":null,"text":"undef: oops","error":"undefined variable: oops"}
+{"line":3,"value":20.0,"text":"20","error":null}
+{"line":4,"value":null,"text":"div/0","error":"division by zero"}
+{"line":5,"value":30.0,"text":"30","error":null}

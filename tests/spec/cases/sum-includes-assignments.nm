@@ -1,0 +1,5 @@
+rent=1200
+utilities=150
+groceries=400
+entertainment=100
+total_expenses=sum

@@ -1,0 +1,9 @@
+{"line":1,"value":null,"text":"syntax","error":"unexpected character: $"}
+{"line":2,"value":null,"text":"syntax","error":"unexpected character: @"}
+{"line":3,"value":null,"text":"syntax","error":"invalid number format: 1,23,4 (commas must be proper thousand separators)"}
+{"line":4,"value":null,"text":"syntax","error":"invalid number format: 12,34 (commas must be proper thousand separators)"}
+{"line":5,"value":null,"text":"syntax","error":"invalid number format: 1234,567 (commas must be proper thousand separators)"}
+{"line":6,"value":null,"text":"syntax","error":"invalid number format: 123, (commas must be proper thousand separators)"}
+{"line":7,"value":null,"text":"syntax","error":"invalid number format: 1,,234 (commas must be proper thousand separators)"}
+{"line":8,"value":null,"text":"syntax","error":"invalid number format: 1,2345 (commas must be proper thousand separators)"}
+{"line":9,"value":null,"text":"syntax","error":"invalid number format: -1,23,4 (commas must be proper thousand separators)"}

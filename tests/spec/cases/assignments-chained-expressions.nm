@@ -1,0 +1,5 @@
+base=1000
+multiplier=1.5
+bonus=base*multiplier+200
+tax_rate=0.25
+after_tax=bonus*(1-tax_rate)

@@ -1,0 +1,4 @@
+# Currency symbols are not supported: every line is an error
+$500         # USD
+€200         # EUR
+$500-€200    # Cross-currency math (optional)

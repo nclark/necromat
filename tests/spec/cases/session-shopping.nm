@@ -1,0 +1,7 @@
+100 # Shoes
+50 # Shirt
+75 # Jeans
+sum                        # Should be 225
+
+budget=300
+leftover=budget-sum        # Should be 75 (note: sum here is last sum result)

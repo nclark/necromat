@@ -1,0 +1,11 @@
+{"line":1,"value":5000.0,"text":"5,000","error":null}
+{"line":2,"value":1234567.0,"text":"1,234,567","error":null}
+{"line":3,"value":1234.56,"text":"1,234.56","error":null}
+{"line":4,"value":-5000.0,"text":"-5,000","error":null}
+{"line":5,"value":0.5,"text":"0.5","error":null}
+{"line":6,"value":100.0,"text":"100","error":null}
+{"line":7,"value":0.0,"text":"0","error":null}
+{"line":8,"value":-1234567.89,"text":"-1,234,567.89","error":null}
+{"line":9,"value":999.0,"text":"999","error":null}
+{"line":10,"value":1000.0,"text":"1,000","error":null}
+{"line":11,"value":1000000.0,"text":"1,000,000","error":null}

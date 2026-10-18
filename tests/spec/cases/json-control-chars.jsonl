@@ -1,0 +1,5 @@
+{"line":1,"value":null,"text":"","error":null}
+{"line":2,"value":null,"text":"undef: tab","error":"undefined variable: tab"}
+{"line":3,"value":null,"text":"syntax","error":"unexpected character: \u0001"}
+{"line":4,"value":null,"text":"syntax","error":"unexpected character: "}
+{"line":5,"value":null,"text":"syntax","error":"unexpected character: \u001f"}

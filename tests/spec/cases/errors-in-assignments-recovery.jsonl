@@ -1,0 +1,7 @@
+{"line":1,"value":100.0,"text":"100","error":null}
+{"line":2,"value":200.0,"text":"200","error":null}
+{"line":3,"value":null,"text":"undef: undefined","error":"undefined variable: undefined"}
+{"line":4,"value":250.0,"text":"250","error":null}
+{"line":5,"value":null,"text":"div/0","error":"division by zero"}
+{"line":6,"value":200.0,"text":"200","error":null}
+{"line":7,"value":750.0,"text":"750","error":null}

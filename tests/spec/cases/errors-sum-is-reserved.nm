@@ -1,0 +1,4 @@
+10
+sum = sum + 1
+sum
+x = sum

@@ -1,0 +1,6 @@
+{"line":1,"value":1.0,"text":"1","error":null}
+{"line":2,"value":2.0,"text":"2","error":null}
+{"line":3,"value":6.0,"text":"6","error":null}
+{"line":4,"value":9.0,"text":"9","error":null}
+{"line":5,"value":null,"text":"undef: a","error":"undefined variable: a"}
+{"line":6,"value":null,"text":"undef: oops","error":"undefined variable: oops"}

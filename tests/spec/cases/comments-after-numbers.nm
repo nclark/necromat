@@ -1,0 +1,6 @@
+starting_balance=500
+
+25 # ChatGPT
+100 # Claude Max 5x
+187 # Snoop Dogg tickets
+ending_balance=starting_balance-sum

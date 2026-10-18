@@ -1,0 +1,2 @@
+{"line":1,"value":null,"text":"div/0","error":"division by zero"}
+{"line":2,"value":null,"text":"undef: x","error":"undefined variable: x"}

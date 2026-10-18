@@ -1,0 +1,6 @@
+# Error messages quote the source text, so these lines check that quotes
+# and backslashes are escaped in the JSON output.
+x = "quoted"
+x = back\slash
+x = 1 / "
+5 # "quoted" \ comment

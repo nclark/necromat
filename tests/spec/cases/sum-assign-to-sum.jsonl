@@ -1,0 +1,10 @@
+{"line":1,"value":10.0,"text":"10","error":null}
+{"line":2,"value":null,"text":"error","error":"'sum' is a reserved keyword and cannot be used as a variable name"}
+{"line":3,"value":10.0,"text":"10","error":null}
+{"line":4,"value":null,"text":"error","error":"'sum' is a reserved keyword and cannot be used as a variable name"}
+{"line":5,"value":0.0,"text":"0","error":null}
+{"line":6,"value":1.0,"text":"1","error":null}
+{"line":7,"value":2.0,"text":"2","error":null}
+{"line":8,"value":3.0,"text":"3","error":null}
+{"line":9,"value":3.0,"text":"3","error":null}
+{"line":10,"value":5.0,"text":"5","error":null}
