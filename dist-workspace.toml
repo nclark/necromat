@@ -17,3 +17,5 @@ install-path = "CARGO_HOME"
 hosting = "github"
 # Whether to install an updater program
 install-updater = false
+# Jobs to run after the release is hosted; "./name" is .github/workflows/name.yml
+publish-jobs = ["./publish-crate"]

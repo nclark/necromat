@@ -1,0 +1,30 @@
+# Publishes the crate to crates.io after dist has built and hosted the
+# release artifacts. Called by release.yml (dist's `publish-jobs`).
+#
+# Authentication is crates.io Trusted Publishing: the job presents its GitHub
+# OIDC identity and gets a short-lived token. No secret is stored. The crate's
+# settings page on crates.io must list this repository and `release.yml`.
+name: Publish crate
+
+on:
+  workflow_call:
+    inputs:
+      plan:
+        required: true
+        type: string
+
+permissions:
+  contents: read
+  id-token: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+      - id: auth
+        uses: rust-lang/crates-io-auth-action@v1
+      - run: cargo publish --locked
+        env:
+          CARGO_REGISTRY_TOKEN: ${{ steps.auth.outputs.token }}
