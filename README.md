@@ -8,6 +8,8 @@ Try it without installing anything:
 docker run --rm -it ghcr.io/nclark/necromat
 ```
 
+![A pad in nm: bills, variables, sum, and errors, with results in the right column](doc/screenshot.png)
+
 ## What Is It
 
 `nm` is like this cool calculator thing. I think it's written in rust but honestly you'd have to check. _nm_ stands for **NUMERICAL MALICE** or **NECROTIC MATHEMATICS** or **NAPALM MULTIPLIER**, probably. It is loosely inspired by [Numi](https://numi.app/) which is definitely better, but Numi doesn't run on linux and doesn't run in the terminal. If you're on a mac you should probably just buy Numi tbh.
@@ -68,8 +70,6 @@ unsaved file refuses until you `:w` or `:q!`. `ZZ` saves and quits.
 [doc/keys.md](doc/keys.md).
 
 ## The pad
-
-![A pad in nm: bills, variables, sum, and errors, with results in the right column](doc/screenshot.png)
 
 The rules:
 
