@@ -20,6 +20,6 @@ COPY --from=builder --chown=65532:65532 /data /data
 # The session file goes under /data. Without a mount it lives in the
 # container and is gone with --rm; to keep it, run as yourself and mount
 # your own directory:
-#   docker run --rm -it --user "$(id -u):$(id -g)" -v ~/.local/share/nm:/data/nm ghcr.io/nclark/nm
+#   docker run --rm -it --user "$(id -u):$(id -g)" -v ~/.local/share/nm:/data/nm ghcr.io/nclark/necromat
 ENV XDG_DATA_HOME=/data
 ENTRYPOINT ["nm"]

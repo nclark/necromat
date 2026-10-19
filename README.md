@@ -5,7 +5,7 @@
 Try it without installing anything:
 
 ```sh
-docker run --rm -it ghcr.io/nclark/nm
+docker run --rm -it ghcr.io/nclark/necromat
 ```
 
 ## What Is It
@@ -22,11 +22,11 @@ the way your fingers expect.
 On Linux or macOS, the install script fetches the right prebuilt binary:
 
 ```sh
-curl --proto '=https' --tlsv1.2 -LsSf https://github.com/nclark/nm/releases/latest/download/necromat-installer.sh | sh
+curl --proto '=https' --tlsv1.2 -LsSf https://github.com/nclark/necromat/releases/latest/download/necromat-installer.sh | sh
 ```
 
 Or grab the tarball for your platform from the
-[releases page](https://github.com/nclark/nm/releases) and put `nm` on your
+[releases page](https://github.com/nclark/necromat/releases) and put `nm` on your
 `PATH` yourself.
 
 Or build it from crates.io:
@@ -42,8 +42,8 @@ your session between runs; it lands in the same place the native binary
 uses:
 
 ```sh
-docker run --rm -it ghcr.io/nclark/nm
-docker run --rm -it --user "$(id -u):$(id -g)" -v ~/.local/share/nm:/data/nm ghcr.io/nclark/nm
+docker run --rm -it ghcr.io/nclark/necromat
+docker run --rm -it --user "$(id -u):$(id -g)" -v ~/.local/share/nm:/data/nm ghcr.io/nclark/necromat
 ```
 
 Heads up: binutils also ships a program called `nm`, the symbol lister. If you
