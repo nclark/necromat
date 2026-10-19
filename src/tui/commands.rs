@@ -179,17 +179,26 @@ impl App {
         self.session_mode = false;
     }
 
-    /// Saves the buffer to the session path when in session mode, unless
-    /// every line is blank. A named file is never saved
-    /// here. Returns whether anything was written; on failure, the session
-    /// path and the error.
+    /// Saves the buffer to the session path when in session mode. When every
+    /// line is blank, nothing is written and any existing session file is
+    /// removed, so clearing the pad and quitting forgets the session. A
+    /// named file is never saved here. Returns whether anything was written;
+    /// on failure, the session path and the error.
     pub fn save_session(&self) -> Result<bool, (PathBuf, std::io::Error)> {
-        if self.file_path.is_some() || self.lines().iter().all(|l| l.trim().is_empty()) {
+        if self.file_path.is_some() {
             return Ok(false);
         }
         let Some(path) = &self.session_path else {
             return Ok(false);
         };
+        if self.lines().iter().all(|l| l.trim().is_empty()) {
+            match std::fs::remove_file(path) {
+                Ok(()) => {}
+                Err(e) if e.kind() == std::io::ErrorKind::NotFound => {}
+                Err(e) => return Err((path.clone(), e)),
+            }
+            return Ok(false);
+        }
         storage::save(path, self.lines()).map_err(|e| (path.clone(), e))?;
         Ok(true)
     }

@@ -277,9 +277,9 @@ The **quit guard**: with a named file that has unsaved changes, `q`, `:q` and
 - `ZZ` and `:x` write only when there are changes, as in vim.
 - In session mode, quitting is never refused, and `:wq` / `:x` with no path
   just quit: there is no file to write, and the session save covers it.
-- On exit in session mode, the text is saved to the session file unless every
-  line is blank. This happens however nm exits, `Ctrl+C` included, and even
-  when the event loop failed.
+- On exit in session mode, the text is saved to the session file; a blank
+  pad removes the file instead, so the session is forgotten. This happens
+  however nm exits, `Ctrl+C` included, and even when the event loop failed.
 - `:e path` from session mode saves the session first, so its text is not
   lost.
 - `Z` followed by anything but `Z` or `Q` does nothing.

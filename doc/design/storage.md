@@ -39,8 +39,10 @@ file and nothing is saved.
 
 - On start in session mode, the session file is loaded if it exists and
   reads cleanly. Otherwise the pad starts with one empty line.
-- On exit in session mode, the text is saved to the session file unless every
-  line is blank. A named file is never saved on exit.
+- On exit in session mode, the text is saved to the session file. When every
+  line is blank, nothing is written and an existing session file is removed,
+  so clearing the pad and quitting forgets the session. A named file is
+  never saved on exit.
 - Leaving session mode with `:e file` saves the session first, so its text
   is not lost. `:w file` also leaves session mode.
 

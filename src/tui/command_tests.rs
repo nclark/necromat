@@ -515,6 +515,21 @@ fn blank_session_is_not_saved() {
 }
 
 #[test]
+fn blank_session_removes_the_old_session_file() {
+    // Clearing the pad and quitting must forget the previous session;
+    // otherwise it comes back on the next start and can never be cleared.
+    let dir = TempDir::new().unwrap();
+    let (mut h, path) = session(&["100 * 200"], &dir);
+    std::fs::create_dir_all(path.parent().unwrap()).unwrap();
+    std::fs::write(&path, "100 * 200\n").unwrap();
+    h.keys("dd");
+    assert!(matches!(h.app.save_session(), Ok(false)));
+    assert!(!path.exists());
+    // Removing a file that is already gone is not an error.
+    assert!(matches!(h.app.save_session(), Ok(false)));
+}
+
+#[test]
 fn session_save_failure_is_reported() {
     let dir = TempDir::new().unwrap();
     let mut h = Harness::new(&["1"]);
