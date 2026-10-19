@@ -61,13 +61,46 @@ Work is not complete until `git push` succeeds:
 ```bash
 br sync --flush-only
 git add .beads/issues.jsonl && git commit -m "br sync" || true
-git pull --rebase
+git pull --rebase=merges   # plain --rebase replays merge commits and re-raises resolved conflicts
 git push
 git status   # must be up to date with origin
 ```
 
 `br sync` never runs git for you. If there is no remote yet, say so in the
 report instead of pretending.
+
+After merging anything that changes the binary, run `just install` so the
+user's `nm` on PATH is current. A stale installed binary has already been
+mistaken for a bug once.
+
+## Checking the real terminal
+
+Unit tests render through the headless harness; a tmux pane checks the rest.
+Send keys with pauses: `Esc` followed at once by a letter arrives as Alt+letter
+and is ignored, so `tmux send-keys Escape; sleep 0.3; tmux send-keys q`.
+`tmux capture-pane -e -p` shows colours as escape codes. Point the session
+file somewhere disposable with `XDG_DATA_HOME`, never at the user's real one.
+
+## Releasing
+
+The crate is `necromat`, the command is `nm`, the repo is
+`github.com/nclark/necromat`. A release is a version bump and a tag; CI does
+the rest:
+
+```bash
+sed -i 's/^version = ".*"$/version = "X.Y.Z"/' Cargo.toml && cargo build
+git commit -am "X.Y.Z" && git push
+git tag vX.Y.Z && git push origin vX.Y.Z
+```
+
+The tag runs `release.yml` (cargo-dist: four targets, GitHub Release, shell
+installer, then `cargo publish` through crates.io Trusted Publishing, no
+stored secret) and `docker.yml` (`ghcr.io/nclark/necromat:X.Y.Z` and
+`:latest`). A push to master publishes `:edge`. dist refuses a tag whose
+version differs from Cargo.toml. `release.yml` is generated: change
+`dist-workspace.toml` and run `dist generate`, never edit it by hand. A
+reusable workflow called from it must not declare `permissions`; it inherits
+them.
 
 ## Decisions and history
 
